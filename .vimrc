@@ -1,3 +1,4 @@
+" This is my test .vimrc
 " Some of my settings
 syntax on
 set background=dark
