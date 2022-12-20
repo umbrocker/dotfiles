@@ -13,7 +13,7 @@ mkdir -p $home/.config
 mkdir -p $home/.fonts
 echo "[*] Dirs created."
 echo "[+] Copying configs, fonts and wallpapers."
-sed -i "s/kali/$user" ./config/i3/config
+sed -i "s/kali/$user/g" ./config/i3/config
 cp ./fonts/*.ttf $home/.fonts/
 cp -R ./config/* $home/.config/
 cp .vimrc $home/
