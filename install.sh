@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install i3 i3blocks rofi feh lxappearance compton -y
 echo "[*] Packages installed."
 echo "[+] Creating dirs."
-mkdir -p $home/.config/i3
+mkdir -p $home/.config
 mkdir -p $home/.fonts
 echo "[*] Dirs created."
 echo "[+] Copying configs, fonts and wallpapers."
@@ -21,8 +21,8 @@ cp .gtkrc-2.0 $home/
 cp -R ./Wallpapers $home/Képek/
 echo "[*] Configs and fonts copied."
 echo "[+] Downloading and installing themes."
-git clone https://github.com/EliverLara/Nordic.git
-git clone https://github.com/alvatip/Nordzy-icon
+git clone https://github.com/umbrocker/Nordic.git
+git clone https://github.com/umbrocker/Nordzy-icon.git
 sudo mv Nordic /usr/share/themes
 cd Nordzy-icon
 chmod +x install.sh
