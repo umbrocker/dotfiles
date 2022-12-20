@@ -16,6 +16,7 @@ echo "[+] Copying configs and fonts."
 cp ./fonts/*.ttf $home/.fonts/
 cp -R ./config/* $home/.config/
 cp .vimrc $home/
+cp .gtkrc-2.0 $home/ 
 echo "[*] Configs and fonts copied."
 echo "[+] Downloading and installing themes."
 git clone https://github.com/EliverLara/Nordic.git
