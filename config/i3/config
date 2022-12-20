@@ -136,20 +136,20 @@ assign [class="Xfce4-power-manager-settings"] $ws4
 assign [class="qt5ct"] $ws4
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1; exec feh --bg-fill /home/kali/Képek/Wallpapers/001.png
-bindsym $mod+2 workspace $ws2; exec feh --bg-fill /home/kali/Képek/Wallpapers/002.png
-bindsym $mod+3 workspace $ws3; exec feh --bg-fill /home/kali/Képek/Wallpapers/003.png 
-bindsym $mod+4 workspace $ws4; exec feh --bg-fill /home/kali/Képek/Wallpapers/004.png 
-bindsym $mod+5 workspace $ws5; exec feh --bg-fill /home/kali/Képek/Wallpapers/005.png 
-bindsym $mod+6 workspace $ws6; exec feh --bg-fill /home/kali/Képek/Wallpapers/006.png 
-bindsym $mod+7 workspace $ws7; exec feh --bg-fill /home/kali/Képek/Wallpapers/007.png 
-bindsym $mod+8 workspace $ws8; exec feh --bg-fill /home/kali/Képek/Wallpapers/008.png 
-bindsym $mod+9 workspace $ws9; exec feh --bg-fill /home/kali/Képek/Wallpapers/009.png 
-bindsym $mod+odiaeresis workspace $ws10; exec feh --bg-fill /home/kali/Képek/Wallpapers/010.png 
+bindsym $mod+1 workspace $ws1; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+2 workspace $ws2; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+3 workspace $ws3; exec /home/kali/.config/i3/wpc.sh   
+bindsym $mod+4 workspace $ws4; exec /home/kali/.config/i3/wpc.sh  
+bindsym $mod+5 workspace $ws5; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+6 workspace $ws6; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+7 workspace $ws7; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+8 workspace $ws8; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+9 workspace $ws9; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+odiaeresis workspace $ws10; exec /home/kali/.config/i3/wpc.sh  
 
 # switch to next workspace
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab workspace next; exec /home/kali/.config/i3/wpc.sh 
+bindsym $mod+Shift+Tab workspace prev; exec  /home/kali/.config/i3/wpc.sh 
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -159,16 +159,16 @@ bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+odiaeresis move container to workspace number $ws10
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+odiaeresis move container to workspace $ws10
 
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# exit i2 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
@@ -232,3 +232,4 @@ bar {
     }
 }
 exec compton -f
+exec feh --bg-fill /home/kali/Képek/Wallpapers/001.png
