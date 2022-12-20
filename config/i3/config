@@ -134,16 +134,16 @@ assign [class="Thunar"] $ws6
 assign [class="Doublecmd"] $ws6
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1; exec feh --bg-fill /home/kali/wallpapers/101.png
-bindsym $mod+2 workspace $ws2; exec feh --bg-scale /home/kali/wallpapers/102.png
-bindsym $mod+3 workspace $ws3; exec feh --bg-center /home/kali/wallpapers/103.png
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+odiaeresis workspace $ws10
+bindsym $mod+1 workspace $ws1; exec feh --bg-fill /home/kali/Képek/Wallpapers/001.png
+bindsym $mod+2 workspace $ws2; exec feh --bg-fill /home/kali/Képek/Wallpapers/002.png
+bindsym $mod+3 workspace $ws3; exec feh --bg-fill /home/kali/Képek/Wallpapers/003.png 
+bindsym $mod+4 workspace $ws4; exec feh --bg-fill /home/kali/Képek/Wallpapers/004.png 
+bindsym $mod+5 workspace $ws5; exec feh --bg-fill /home/kali/Képek/Wallpapers/005.png 
+bindsym $mod+6 workspace $ws6; exec feh --bg-fill /home/kali/Képek/Wallpapers/006.png 
+bindsym $mod+7 workspace $ws7; exec feh --bg-fill /home/kali/Képek/Wallpapers/007.png 
+bindsym $mod+8 workspace $ws8; exec feh --bg-fill /home/kali/Képek/Wallpapers/008.png 
+bindsym $mod+9 workspace $ws9; exec feh --bg-fill /home/kali/Képek/Wallpapers/009.png 
+bindsym $mod+odiaeresis workspace $ws10; exec feh --bg-fill /home/kali/Képek/Wallpapers/010.png 
 
 # switch to next workspace
 bindsym $mod+Tab workspace next
@@ -196,7 +196,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+Shift+x exec i3lock --show-failed-attempts --image /home/kali/wallpapers/101.png
+bindsym $mod+Shift+x exec i3lock --show-failed-attempts --image /home/kali/Képek/Wallpapers/lock.png
 
 
     # Window color settings
