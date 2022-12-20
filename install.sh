@@ -32,4 +32,12 @@ chmod +x install.sh
 ./install.sh
 cd ..
 echo -e "$g[*] Themes downloaded and installed."
-echo -e "[*] Installation completed.$reset"
+echo -e "[*] Installation completed."
+
+read -p "[?] Do you want a clean-up (y/n)?\n" clean
+
+if [ $clean = "y" ]
+then
+	cd ..
+	rm -rf dotfiles
+fi
