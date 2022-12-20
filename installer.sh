@@ -14,7 +14,7 @@ mkdir -p $home/.fonts
 echo "[*] Dirs created."
 echo "[+] Copying configs and fonts."
 cp ./fonts/*.ttf $home/.fonts/
-cp ./i3/config $home/.config/i3/
+cp -R ./config/* $home/.config/
 cp .vimrc $home/
 echo "[*] Configs and fonts copied."
 echo "[+] Downloading and installing themes."
