@@ -6,7 +6,7 @@ user=$USER
 echo "[+] Installing packages."
 echo "[*] Need sudo permissions."
 sudo apt update
-sudo apt install i3 i3blocks rofi feh lxappearance -y
+sudo apt install i3 i3blocks rofi feh lxappearance compton -y
 echo "[*] Packages installed."
 echo "[+] Creating dirs."
 mkdir -p $home/.config/i3
