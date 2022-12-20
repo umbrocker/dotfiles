@@ -32,9 +32,9 @@ chmod +x install.sh
 ./install.sh
 cd ..
 echo -e "$g[*] Themes downloaded and installed."
-echo -e "[*] Installation completed."
+echo -e "[*] Installation completed.$reset"
 
-read -p "[?] Do you want a clean-up (y/n)?\n" clean
+read -p "[?] Do you want a clean-up (y/n): " clean
 
 if [ $clean = "y" ]
 then
