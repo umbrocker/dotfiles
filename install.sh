@@ -7,7 +7,7 @@ r="\e[1;31m"
 echo -e "$g[+] Installing packages."
 echo -e "$r[*] Need sudo permissions.$reset"
 sudo apt update
-sudo apt install i3 i3blocks rofi feh lxappearance compton -y
+sudo apt install i3 i3blocks rofi feh lxappearance compton lm-sensors -y
 echo -e "$g[*] Packages installed."
 echo -e "[+] Creating dirs.$reset"
 mkdir -p $HOME/.config
