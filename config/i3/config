@@ -217,7 +217,7 @@ bar {
 	i3bar_command i3bar --transparency
 	strip_workspace_numbers yes
 	position top
-        status_command i3status
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
             separator  #1f222d
             background #1f222dd0
