@@ -136,20 +136,20 @@ assign [class="Xfce4-power-manager-settings"] $ws4
 assign [class="qt5ct"] $ws4
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+2 workspace $ws2; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+3 workspace $ws3; exec /home/kali/.config/i3/wpc.sh   
-bindsym $mod+4 workspace $ws4; exec /home/kali/.config/i3/wpc.sh  
-bindsym $mod+5 workspace $ws5; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+6 workspace $ws6; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+7 workspace $ws7; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+8 workspace $ws8; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+9 workspace $ws9; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+odiaeresis workspace $ws10; exec /home/kali/.config/i3/wpc.sh  
+bindsym $mod+1 workspace $ws1; exec ~/.config/i3/wpc.sh 
+bindsym $mod+2 workspace $ws2; exec ~/.config/i3/wpc.sh 
+bindsym $mod+3 workspace $ws3; exec ~/.config/i3/wpc.sh   
+bindsym $mod+4 workspace $ws4; exec ~/.config/i3/wpc.sh  
+bindsym $mod+5 workspace $ws5; exec ~/.config/i3/wpc.sh 
+bindsym $mod+6 workspace $ws6; exec ~/.config/i3/wpc.sh 
+bindsym $mod+7 workspace $ws7; exec ~/.config/i3/wpc.sh 
+bindsym $mod+8 workspace $ws8; exec ~/.config/i3/wpc.sh 
+bindsym $mod+9 workspace $ws9; exec ~/.config/i3/wpc.sh 
+bindsym $mod+odiaeresis workspace $ws10; exec ~/.config/i3/wpc.sh  
 
 # switch to next workspace
-bindsym $mod+Tab workspace next; exec /home/kali/.config/i3/wpc.sh 
-bindsym $mod+Shift+Tab workspace prev; exec  /home/kali/.config/i3/wpc.sh 
+bindsym $mod+Tab workspace next; exec ~/.config/i3/wpc.sh 
+bindsym $mod+Shift+Tab workspace prev; exec  ~/.config/i3/wpc.sh 
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -197,7 +197,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+Shift+x exec i3lock --show-failed-attempts --image /home/kali/Képek/Wallpapers/lock.png
+bindsym $mod+Shift+x exec i3lock --show-failed-attempts --image ~/Képek/Wallpapers/lock.png
 
 
     # Window color settings
@@ -232,4 +232,4 @@ bar {
     }
 }
 exec compton -f
-exec feh --bg-fill /home/kali/Képek/Wallpapers/001.png
+exec feh --bg-fill ~/Képek/Wallpapers/001.png

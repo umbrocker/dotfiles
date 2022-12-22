@@ -16,7 +16,7 @@ mkdir -p $HOME/.fonts
 mkdir -p $HOME/Képek
 echo -e "$g[*] Dirs created."
 echo -e "[+] Copying configs, fonts and wallpapers.$reset"
-sed -i "s/kali/$USER/g" ./config/i3/config
+#sed -i "s/kali/$USER/g" ./config/i3/config
 sed -i "s/kali/$USER/g" ./config/i3/wpc.sh
 cp ./fonts/*.ttf $HOME/.fonts/
 cp -R ./config/* $HOME/.config/
