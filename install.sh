@@ -37,8 +37,7 @@ echo -e "[*] Installation completed.$reset"
 
 read -p "[?] Do you want a clean-up (y/n): " clean
 
-if [ $clean = "y" ]
-then
+if [ $clean = "y" ]; then
 	cd ..
 	rm -rf dotfiles
 fi
