@@ -21,7 +21,6 @@ sed -i "s/kali/$USER/g" ./config/i3/wpc.sh
 cp ./fonts/*.ttf $HOME/.fonts/
 cp -R ./config/* $HOME/.config/
 cp .vimrc $HOME/
-cp -R .vim $HOME/
 cp .gtkrc-2.0 $HOME/ 
 cp -R ./Wallpapers $HOME/Képek/
 echo -e "$g[*] Configs and fonts copied."
