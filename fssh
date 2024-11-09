@@ -1,0 +1,11 @@
+#!/bin/bash
+
+selected=`grep Host ~/.ssh/config | grep '#' |fzf`
+format_string=`echo -n $selected | awk '{print $2}'`
+
+if echo $selected | grep git; then
+	read -p "[+] Git repo name: " repo
+	git clone $format_string:umbrocker/$repo
+else
+	ssh $format_string
+fi
