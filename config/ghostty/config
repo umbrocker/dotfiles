@@ -1,0 +1,41 @@
+# config
+theme = cyberpunk
+window-decoration = false 
+window-height = 1080
+window-width = 1920
+font-size = 16
+background-opacity = 0.8
+shell-integration = bash
+term = xterm-256color
+scrollback-limit = 10737418240
+
+# keybindings
+# move between split terminals
+keybind = alt+right=goto_split:right 
+keybind = alt+left=goto_split:left 
+keybind = alt+down=goto_split:bottom 
+keybind = alt+up=goto_split:top
+
+# focus on active terminal 
+keybind = ctrl+shift+x=toggle_split_zoom
+
+# zoom in/out in active terminal
+keybind = ctrl+shift+.=increase_font_size:1
+keybind = ctrl+shift+-=decrease_font_size:1
+
+# resize terminal
+keybind = ctrl+right=resize_split:right,5
+keybind = ctrl+left=resize_split:left,5
+keybind = ctrl+up=resize_split:up,5
+keybind = ctrl+down=resize_split:down,5
+keybind = ctrl+shift+f5=equalize_splits
+
+# fullscreen/decorations
+keybind = ctrl+shift+f11=toggle_fullscreen
+keybind = ctrl+shift+f12=toggle_window_decorations
+
+# open config
+keybind = ctrl+shift+f2=open_config
+
+# save scrollback to tmp file
+keybind = ctrl+shift+f3=write_screen_file:paste
